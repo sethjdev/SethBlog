@@ -189,14 +189,27 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\bootstrap.css" />
-    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\bootstrap.css" />
+    <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\css\Style.css">
+      <DependentUpon>Style.less</DependentUpon>
+    </Content>
+    <Content Include="Content\css\Style.min.css">
+      <DependentUpon>Style.css</DependentUpon>
+    </Content>
+    <Content Include="Content\images\sethpic-sq.jpg" />
+    <Content Include="Content\images\space-2.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
+    <Content Include="Content\css\Site.css" />
+    <Content Include="Scripts\AppScripts\PageLoad.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\css\Style.less" />
+    <Content Include="Content\css\Style.css.map">
+      <DependentUpon>Style.css</DependentUpon>
+    </Content>
     <None Include="Properties\PublishProfiles\SethBlog %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\SethBlog.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />

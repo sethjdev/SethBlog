@@ -142,6 +142,12 @@ namespace SethBlog.Controllers
             return View();
         }
 
+        [AllowAnonymous]
+        public ActionResult _Register()
+        {
+            return PartialView("~/Views/Account/Register.cshtml");
+        }
+
         //
         // POST: /Account/Register
         [HttpPost]
