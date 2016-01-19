@@ -197,13 +197,14 @@
     <Content Include="Content\css\Style.min.css">
       <DependentUpon>Style.css</DependentUpon>
     </Content>
+    <Content Include="Content\images\houseicon.png" />
     <Content Include="Content\images\sethpic-sq.jpg" />
     <Content Include="Content\images\space-2.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\css\Site.css" />
-    <Content Include="Scripts\AppScripts\PageLoad.js" />
+    <Content Include="Scripts\AppScripts\DomManipulation.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\css\Style.less" />
@@ -259,6 +260,7 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Home\Portfolio.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

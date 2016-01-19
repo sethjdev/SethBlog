@@ -24,7 +24,7 @@ namespace SethBlog
                       "~/Scripts/respond.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/app").Include(
-                      "~/Scripts/AppScripts/PageLoad.js"));
+                      "~/Scripts/AppScripts/DomManipulation.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/css/bootstrap.css",

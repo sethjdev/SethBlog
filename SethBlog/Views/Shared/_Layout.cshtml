@@ -13,13 +13,16 @@
     <div id="wrapper">
 
         <!-- Sidebar -->
-        <div id="sidebar-wrapper">
+        <header id="sidebar-wrapper">
             <div id="profile-card">
-                <div id="profile-header">
-                    <img src="~/Content/images/space-2.jpg" />
-                </div>
-                <img src="~/Content/images/sethpic-sq.jpg" id="profile-pic" />
-                <h1>Seth Johnson<span>Web Developer</span></h1>
+                <a href="/" class="home-click">
+                    <div id="profile-header">
+                        <img src="~/Content/images/houseicon.png" id="home-icon" />
+                        <img src="~/Content/images/space-2.jpg" id="header-bg" />
+                    </div>
+                    <img src="~/Content/images/sethpic-sq.jpg" id="profile-pic" />
+                    <h1>Seth Johnson<span>Web Developer</span></h1>
+                </a>
                 <div class="icons">
                     <div class="row">
                         <div class="col-xs-3"><a href="https://github.com/sethjdev" target="_blank"><i class="fa fa-github fa-2x"></i></a></div>
@@ -31,12 +34,15 @@
             </div>
             <nav class="sidebar-nav">
                 <ul>
-                    <li><a href="#">About Me<i class="fa fa-angle-right"></i></a></li>
-                    <li><a href="#">Portfolio<i class="fa fa-angle-right"></i></a></li>
-                    <li><a href="#">Contact<i class="fa fa-angle-right"></i></a></li>
+                    <li><a href="/about-me" data-content="About Me" class="@(ViewContext.RouteData.Values["Action"].ToString() == "About" ? "active" : "")">About Me<i class="fa fa-angle-right"></i></a></li>
+                    <li><a href="/portfolio" data-content="Portfolio" class="@(ViewContext.RouteData.Values["Action"].ToString() == "Portfolio" ? "active" : "")">Portfolio<i class="fa fa-angle-right"></i></a></li>
+                    <li><a href="/contact" data-content="Contact" class="@(ViewContext.RouteData.Values["Action"].ToString() == "Contact" ? "active" : "")">Contact<i class="fa fa-angle-right"></i></a></li>
                 </ul>
             </nav>
-        </div>
+            <div id="footer">
+                <p>&copy; @DateTime.Now.Year Seth Johnson</p>
+            </div>
+        </header>
         <!-- /#sidebar-wrapper -->
         <!-- Page Content -->
         <div id="page-content-wrapper">
